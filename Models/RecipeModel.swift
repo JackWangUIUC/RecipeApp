@@ -8,4 +8,12 @@
 import Foundation
 
 
+struct RecipeResponse: Codable {
+    let meals: [Recipe]
+}
 
+struct Recipe: Hashable, Codable {
+    let idMeal: String
+    let strMealThumb: String
+    let strMeal: String
+}
